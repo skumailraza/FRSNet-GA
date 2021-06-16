@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=0,1 python -u train.py --batchSize=2 \
+               --crop_height=192 \
+               --crop_width=576 \
+               --max_disp=192 \
+               --thread=16 \
+               --data_path='/data/schuster/BMW_SceneFlow/DATA/Freiburg/FlyingThings3D/' \
+               --training_list='lists/sceneflow_train_1.list' \
+               --save_path='./checkpoint/sceneflow_retrain_ms_d192' \
+               --visualize=1 \
+               --model='GANet_ms' \
+               --lr=0.001 \
+               --nEpochs=20 2>&1 |tee logs/log_train_sf_retrain_max_disp_192.txt

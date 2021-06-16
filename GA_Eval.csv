@@ -1,0 +1,11 @@
+﻿Train/Eval Experiment;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+Checkpoint;Train/Eval;Dataset;Crop_width;Crop_height;PT_sceneflow;PT_finetune;epochs;Batch_Size;Avg. Loss;Avg. Error 1;Avg. Error 2;Avg. Error 3;Avg. EPE;Error Rate
+sceneflow_retrain;Train;sceneflow;528;144;No;No;11;4;3,19;3,80;1,97;1,73;;
+finetune_retrain;Train;kitti2015;720;240;No;No;640;2;0,2317;0,5788;0,3563;0,3232;;
+finetune_retrain;Eval;kitti2015;1248;384;No;No;640;;;;;;0.4534;0.0101
+finetune_retrain;Eval;eth3d;960;576;No;No;640;;;;;;2.0737;0.2854
+finetune_retrain;Eval;middlebury_q;960;576;No;No;640;;;;;;3.9665;0.3904
+FT_multi_eth3d_kitti2015;Eval;eth3d;960;576;Yes;No;150;;;;;;0.8406;0.2053
+FT_multi_eth3d_kitti2015;Eval;middlebury_q;960;576;Yes;No;150;;;;;;3.2410;0.4130
+FT_multi_eth3d_kitti2015;Eval;kitti2015;1248;384;Yes;;150;;;;;;1.0325;0.0461
