@@ -60,7 +60,7 @@ Step 2: download and prepare the dataset
         
 Step 3: revise parameter settings and run "train_fresh.sh" for training, finetuning 
 
-Step 4: revise parameter settings and run "evaluation.sh" and "predict.sh" for testing/prediction. Note that the “crop_width” and “crop_height” must be multiple of 48, "max_disp" must be multiple of 12 (default: 192).
+Step 4: revise parameter settings and run "evaluation.sh" and "predict.sh" for testing/prediction. Note that the “crop_width” and “crop_height” must be multiple of 192, "max_disp" must be multiple of 12 (default: 12).
 
 ## How to Use? (Slurm Cluster)
 
@@ -96,8 +96,8 @@ Step 5: revise ***srun*** settings and parameters in "run_slurm.sh" and run it f
 - These pre-trained models use a batchsize of 32 on four A100 GPUs with a crop size of 576x384.
 Sceneflow (for fine-tuning, typically for 30 epochs) Kitti2015 (after fine-tuning)
   
-        Model Zoo in path:
-        /netscratch/kraza/FRSNet/ModelZoo/FRSNet-GA/*
+        Model Zoo:
+	COMING SOON
 
 
 #### Evaluations and Comparisons on SceneFlow Dataset (30 epoches)
