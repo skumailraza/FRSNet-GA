@@ -33,7 +33,7 @@ Please refer to https://github.com/pytorch/pytorch about how to reinstall pytorc
 
 Step 1: compile the libs by "sh compile.sh"
 - Change the environmental variable ($PATH, $LD_LIBRARY_PATH etc.), if it's not set correctly in your system environment (e.g. .bashrc). Examples are included in "compile.sh". 
--  Install NVIDIA-Apex package https://github.com/NVIDIA/apex
+- (Optional) Install NVIDIA-Apex package https://github.com/NVIDIA/apex
           $ git clone https://github.com/NVIDIA/apex
           $ cd apex
           $ pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
