@@ -88,7 +88,7 @@ Step 2: Select appropriate enroot container:
 
 Step 3: revise parameter settings in "train_fresh.sh" for training, finetuning
 
-Step 4: revise parameter settings and run "evaluation.sh" and "predict.sh" for testing/prediction. Note that the “crop_width” and “crop_height” must be multiple of 48, "max_disp" must be multiple of 12 (default: 192).
+Step 4: revise parameter settings and run "evaluation.sh" and "predict.sh" for testing/prediction. Note that the “crop_width” and “crop_height” must be multiple of 192, "max_disp" must be multiple of 12 (default: 12).
 
 Step 5: revise ***srun*** settings and parameters in "run_slurm.sh" and run it for training, testing, prediction, profiling etc. un-commenting the required command.
 
